@@ -1,4 +1,5 @@
 git clone git@github.com:PepeSegura/AutoVIM.git
-cd ./AutoVIM
+sleep 3
+cd $(pwd)/AutoVIM
 ls
 echo "HOLA EL SCRIP FUNCIONA"
