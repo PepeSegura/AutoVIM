@@ -6,7 +6,7 @@ sleep 2
 cd $(pwd)/AutoVIM
 
 #Install Oh My Zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #Backup zshrc and vimrc files
 mkdir -p ~/backup_files
