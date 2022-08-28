@@ -2,8 +2,9 @@
 
 #Clone repo and enter in folder
 git clone git@github.com:PepeSegura/AutoVIM.git
-sleep 2
+sleep 5
 cd $(pwd)/AutoVIM
+echo "Repositorio Clonado"
 
 #Install Oh My Zsh
 #sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -21,4 +22,4 @@ cp $(pwd)/source/.zshrc ~/
 source ~/.zshrc
 echo "Abre VIM para ver los cambios 🥰"
 
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/PepeSegura/AutoVIM/master/AutoVIM.sh)"
+#zsh -c "$(curl -fsSL https://raw.githubusercontent.com/PepeSegura/AutoVIM/master/AutoVIM.sh)"
