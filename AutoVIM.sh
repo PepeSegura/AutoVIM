@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 #Clone repo and enter in folder
 git clone git@github.com:PepeSegura/AutoVIM.git
