@@ -2,7 +2,7 @@
 
 #Clone repo and enter in folder
 git clone https://github.com/PepeSegura/AutoVIM.git
-sleep 5
+sleep 2
 cd $(pwd)/AutoVIM
 echo "Repositorio Clonado"
 
@@ -21,6 +21,6 @@ cp $(pwd)/source/.vimrc ~/
 cp $(pwd)/source/.zshrc ~/
 source ~/.zshrc
 echo "Abre VIM para ver los cambios 🥰"
-rm -rf AutoVIM
+rm -rf $(pwd)/AutoVIM
 
 #zsh -c "$(curl -fsSL https://raw.githubusercontent.com/PepeSegura/AutoVIM/master/AutoVIM.sh)"
