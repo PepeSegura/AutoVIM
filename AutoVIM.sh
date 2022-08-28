@@ -21,5 +21,6 @@ cp $(pwd)/source/.vimrc ~/
 cp $(pwd)/source/.zshrc ~/
 source ~/.zshrc
 echo "Abre VIM para ver los cambios 🥰"
+rm -rf AutoVIM
 
 #zsh -c "$(curl -fsSL https://raw.githubusercontent.com/PepeSegura/AutoVIM/master/AutoVIM.sh)"
