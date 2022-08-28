@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 #Clone repo and enter in folder
-git clone https://github.com/PepeSegura/AutoVIM.git
+git clone -q https://github.com/PepeSegura/AutoVIM.git
 sleep 2
 cd $(pwd)/AutoVIM
 echo "Repositorio Clonado"
