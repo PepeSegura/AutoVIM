@@ -19,5 +19,6 @@ cp $(pwd)/source/sublimemonokai.vim ~/.vim/colors/
 cp $(pwd)/source/.vimrc ~/
 cp $(pwd)/source/.zshrc ~/
 source ~/.zshrc
+echo "Abre VIM para ver los cambios 🥰"
 
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/PepeSegura/AutoVIM/master/AutoVIM.sh)"
