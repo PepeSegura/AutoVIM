@@ -38,7 +38,7 @@ fi
 if [ -e ~/.vim/colors/sublimemonokai.vim ]
 then
     echo "You already have The Best theme ever!!!"
-    sleep 3
+    sleep 1
 else
     mkdir -p ~/.vim/colors
     echo "$(curl -fsSL https://raw.githubusercontent.com/erichdongubler/vim-sublime-monokai/master/colors/sublimemonokai.vim)" > ~/.vim/colors/sublimemonokai.vim
