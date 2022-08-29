@@ -6,12 +6,12 @@ then
     echo "Oh My Zsh is already Installed"
     sleep 1
 else
-    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    zsh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
 
 #Configure .zshrc
-if [[ -e ~/.zshrc && ~/backup_files]]
+if [[ -e ~/.zshrc && ~/backup_files ]]
 then
     cp ~/.zshrc ~/backup_files/.zsh_backup
     echo "$(curl -fsSL https://raw.githubusercontent.com/PepeSegura/AutoVIM/master/source/.zshrc)" > ~/.zshrc
@@ -23,7 +23,7 @@ fi
 
 
 #Configure .vimrc
-if [[ -e ~/.vimrc $$ && ~/backup_files]]
+if [[ -e ~/.vimrc  && ~/backup_files ]]
 then
     cp ~/.vimrc ~/backup_files/.vimrc_backup
     echo "$(curl -fsSL https://raw.githubusercontent.com/PepeSegura/AutoVIM/master/source/.vimrc)" > ~/.vimrc
@@ -35,7 +35,7 @@ fi
 
 
 #Configure Sublime Monokai
-if [ -e ~/.vim/colors/sublimemonokai.vim]
+if [ -e ~/.vim/colors/sublimemonokai.vim ]
 then
     echo "You already have The Best theme ever!!!"
     sleep 3
