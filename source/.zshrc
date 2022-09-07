@@ -100,21 +100,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/sgoinfre/students/psegura-/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/sgoinfre/students/psegura-/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/sgoinfre/students/psegura-/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/sgoinfre/students/psegura-/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
 #Alias
 alias gme="bash ./libft-war-machine/grademe.sh"
 
@@ -125,8 +110,7 @@ alias lcc="gcc -Wall -Werror -Wextra -pedantic -fsanitize=address -g3"
 alias sgoinfre="cd /sgoinfre/students/psegura-"
 alias 42grademe='bash -c "$(curl https://grademe.fr)"'
 
-alias cclean='bash ~/Cleaner_42.sh'
-alias vi="./nvim-macos/bin/nvim"
+alias cclean='bash -c "$(curl -fsSL https://raw.githubusercontent.com/ombhd/Cleaner_42/master/Cleaner_42.sh)"'
 
 # Load Homebrew config script
 source $HOME/.brewconfig.zsh
