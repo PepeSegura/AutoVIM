@@ -17,7 +17,7 @@ fi
 
 
 #Configure .zshrc
-if [[ -e ~/.zshrc && ~/backup_files ]]
+if [[ -e ~/.zshrc && -e ~/backup_files ]]
 then
     cp ~/.zshrc ~/backup_files/.zsh_backup
     echo "$(curl -fsSL https://raw.githubusercontent.com/PepeSegura/AutoVIM/master/source/.zshrc)" > ~/.zshrc
@@ -29,7 +29,7 @@ fi
 
 
 #Configure .vimrc
-if [[ -e ~/.vimrc  && ~/backup_files ]]
+if [[ -e ~/.vimrc  && -e ~/backup_files ]]
 then
     cp ~/.vimrc ~/backup_files/.vimrc_backup
     echo "$(curl -fsSL https://raw.githubusercontent.com/PepeSegura/AutoVIM/master/source/.vimrc)" > ~/.vimrc
