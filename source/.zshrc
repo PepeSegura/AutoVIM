@@ -101,19 +101,16 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh
 
 #Alias
-alias gme="bash ./libft-war-machine/grademe.sh"
-
 alias fcc="gcc -Wall -Werror -Wextra -pedantic"
 alias aut="./a.out"
 alias lcc="gcc -Wall -Werror -Wextra -pedantic -fsanitize=address -g3"
+alias mcc="fcc -lmlx -framework OpenGL -framework AppKit"
 
 alias sgoinfre="cd /sgoinfre/students/psegura-"
 alias 42grademe='bash -c "$(curl https://grademe.fr)"'
 
 alias cclean='bash -c "$(curl -fsSL https://raw.githubusercontent.com/ombhd/Cleaner_42/master/Cleaner_42.sh)"'
 
-# Load Homebrew config script
-source $HOME/.brewconfig.zsh
-
-# Export
-export PATH=$HOME/.brew/bin:$PATH
+alias status='git status'
+alias commitdef='git commit -m "New commit"'
+alias clone='git clone -q'
