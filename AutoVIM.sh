@@ -16,16 +16,16 @@ else
 fi
 
 
-#Configure .zshrc
-if [[ -e ~/.zshrc && -e ~/backup_files ]]
-then
-    cp ~/.zshrc ~/backup_files/.zsh_backup
-    echo "$(curl -fsSL https://raw.githubusercontent.com/PepeSegura/AutoVIM/master/source/.zshrc)" > ~/.zshrc
-else
-    mkdir -p ~/backup_files
-    cp ~/.zshrc ~/backup_files/.zsh_backup
-    echo "$(curl -fsSL https://raw.githubusercontent.com/PepeSegura/AutoVIM/master/source/.zshrc)" > ~/.zshrc
-fi
+# #Configure .zshrc
+# if [[ -e ~/.zshrc && -e ~/backup_files ]]
+# then
+#     cp ~/.zshrc ~/backup_files/.zsh_backup
+#     echo "$(curl -fsSL https://raw.githubusercontent.com/PepeSegura/AutoVIM/master/source/.zshrc)" > ~/.zshrc
+# else
+#     mkdir -p ~/backup_files
+#     cp ~/.zshrc ~/backup_files/.zsh_backup
+#     echo "$(curl -fsSL https://raw.githubusercontent.com/PepeSegura/AutoVIM/master/source/.zshrc)" > ~/.zshrc
+# fi
 
 
 #Configure .vimrc
